@@ -4,14 +4,7 @@ class Rle:
         pass
 
     def encode_image(self,binary_image):
-        """
-        For efficiency, flatten the image by concatinating rows to create one long array, and
-        compute run length encoding.
-        Compress the image
-        takes as input:
-        image: binary_image
-        returns run length code
-        """
+
         rle=[]
         
         for i in range(np.shape(binary_image)[0]):
@@ -36,14 +29,7 @@ class Rle:
 
 
     def decode_image(self, rle_code, height , width):
-        """
-        Since the image was flattened during the encoding, use the hight and width to reconstruct the image
-        Reconstructs original image from the rle_code
-        takes as input:
-        rle_code: the run length code to be decoded
-        Height, width: height and width of the original image
-        returns decoded binary image
-        """
+
         decode = []
         for i in range(len(rle_code)):
             if rle_code[i] == '255':
