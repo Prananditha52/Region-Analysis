@@ -1,5 +1,4 @@
-"""dip_hw1.py: Starter file to run howework 1"""
-#Example Usage: ./dip_hw1_region_analysis -i imagename.jpg
+
 import cv2
 import sys
 
@@ -12,10 +11,6 @@ from region_analysis import cell_counting as cc
 from compression import run_length_encoding as rle
 
 matplotlib.use('Agg')
-
-__author__ = "Pranav Mantini"
-__email__ = "pmantini@uh.edu"
-__version__ = "1.0.0"
 
 
 def display_image(window_name, image):
